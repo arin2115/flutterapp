@@ -86,7 +86,7 @@ class MyApp extends StatelessWidget {
         ),
         darkTheme: ThemeData(
           colorScheme: darkDynamic ?? _defaultDarkColorScheme,
-          scaffoldBackgroundColor: darkDynamic?.background ?? Colors.black,
+          scaffoldBackgroundColor: darkDynamic?.surface ?? Colors.black,
           useMaterial3: true,
         ),
         home: Scaffold(

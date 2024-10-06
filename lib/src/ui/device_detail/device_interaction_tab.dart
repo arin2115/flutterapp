@@ -286,7 +286,7 @@ class _UnlockButtonState extends State<UnlockButton> {
                         backgroundColor: Theme.of(context)
                             .buttonTheme
                             .colorScheme
-                            ?.background,
+                            ?.surface,
                         shape: const RoundedRectangleBorder(
                           borderRadius: BorderRadius.only(
                               topLeft: Radius.circular(15),
