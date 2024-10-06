@@ -216,7 +216,6 @@ class _UnlockButtonState extends State<UnlockButton> {
 
   @override
   void initState() {
-    isUnlocked = false;
     subscribeCharacteristic();
     super.initState();
   }
@@ -246,9 +245,13 @@ class _UnlockButtonState extends State<UnlockButton> {
               padding: const EdgeInsets.all(8),
               foregroundColor: Colors.redAccent,
             ),
-            child: Icon(
-              Text("Lock"),
-              Icons.lock_outline,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Text("Unlock"),
+                Icon(Icons.lock_outline),
+              ],
             ),
           ),
 
@@ -290,9 +293,13 @@ class _UnlockButtonState extends State<UnlockButton> {
                               topRight: Radius.circular(15)),
                         ));
                   },
-            child: Icon(
-              Text("Unlock"),
-              Icons.lock_open,
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Text("Unlock"),
+                Icon(Icons.lock_open),
+              ],
             ),
           ),
 

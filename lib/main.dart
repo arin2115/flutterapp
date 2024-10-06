@@ -2,13 +2,13 @@ import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_reactive_ble/flutter_reactive_ble.dart';
 import 'package:get/get.dart';
-import 'package:limer/screens/devices_screen.dart';
-import 'package:limer/src/ble/ble_device_connector.dart';
-import 'package:limer/src/ble/ble_device_interactor.dart';
-import 'package:limer/src/ble/ble_scanner.dart';
-import 'package:limer/src/ble/ble_status_monitor.dart';
-import 'package:limer/src/ui/ble_status_screen.dart';
-import 'package:limer/src/ui/device_list.dart';
+import 'package:kukirin/screens/devices_screen.dart';
+import 'package:kukirin/src/ble/ble_device_connector.dart';
+import 'package:kukirin/src/ble/ble_device_interactor.dart';
+import 'package:kukirin/src/ble/ble_scanner.dart';
+import 'package:kukirin/src/ble/ble_status_monitor.dart';
+import 'package:kukirin/src/ui/ble_status_screen.dart';
+import 'package:kukirin/src/ui/device_list.dart';
 import 'package:provider/provider.dart';
 
 import 'src/ble/ble_logger.dart';
@@ -91,7 +91,7 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: const Text("Limer"),
+            title: const Text("kukirin"),
           ),
           body: Consumer<BleStatus?>(
             builder: (_, status, __) {

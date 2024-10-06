@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:get/get.dart';
-import 'package:limer/screens/devices_screen.dart';
+import 'package:kukirin/screens/devices_screen.dart';
 
 class ControllScreen extends StatefulWidget {
   const ControllScreen({super.key, required this.device});
