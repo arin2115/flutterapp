@@ -18,8 +18,8 @@
 
     <!--bibo01
     : hardware option-->
-    <uses-feature android:name="android.hardware.bluetooth" android:required="true" />
-    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <application android:label="KuKirin" android:name="KuKirin"
         android:icon="@mipmap/ic_launcher">
