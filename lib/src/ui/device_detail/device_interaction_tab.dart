@@ -240,16 +240,11 @@ class _UnlockButtonState extends State<UnlockButton> {
                 
               });
             },
-            style: ElevatedButton.styleFrom(
-              minimumSize: Size(double.maxFinite, 50),
-              padding: const EdgeInsets.all(8),
-              foregroundColor: Colors.redAccent,
-            ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
-                Text("Unlock"),
+                Text("Lock"),
                 Icon(Icons.lock_outline),
               ],
             ),
@@ -263,11 +258,6 @@ class _UnlockButtonState extends State<UnlockButton> {
                 
               });
             },
-            style: ElevatedButton.styleFrom(
-              minimumSize: Size(double.maxFinite, 50),
-              padding: const EdgeInsets.all(8),
-              foregroundColor: Colors.greenAccent,
-            ),
             onLongPress: () {
                     Get.bottomSheet(
                         isDismissible: true,

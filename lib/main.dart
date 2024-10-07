@@ -91,7 +91,7 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: const Text("kukirin"),
+            title: const Text("KuKirin"),
           ),
           body: Consumer<BleStatus?>(
             builder: (_, status, __) {
